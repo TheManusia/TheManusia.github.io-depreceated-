@@ -191,7 +191,7 @@ header .info .right-area{ margin-left: 45px; }
 
 .intro-section{ padding-top: 200px; position: relative; background-size: cover; 
 
-	z-index: 1;background-image: url("https://themanusia.xyz/images/slider-1-1920x1080.jpg"); }
+	z-index: 1;background-image: url("images/slider-1-1920x1080.jpg"); }
 
 
 
@@ -239,7 +239,7 @@ header .info .right-area{ margin-left: 45px; }
 
 .intro .social-icons > li > a:hover:after{ -webkit-transform: scale(1); transform: scale(1); }
 
-.gambar {content: url("https://themanusia.xyz/images/ian.png"); width:200px; height: 200px;}
+.gambar {content: url("images/ian.png"); width:200px; height: 200px;}
 
 
 
@@ -387,7 +387,7 @@ header .info .right-area{ margin-left: 45px; }
 
 .counter-section{ position: relative; padding: 100px 0 70px; background-size: cover; z-index: 1; 
 
-	background-image: url("https://themanusia.xyz/images/slider-2-1920x600.jpg"); color: #fff; }
+	background-image: url("images/slider-2-1920x600.jpg"); color: #fff; }
 
 
 
