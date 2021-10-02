@@ -62,7 +62,7 @@
             <div class="about-section">
               <div class="row">
                 <div class="col-md-6">
-                  <h2 class="h2 fw-light mb-4">About Me</h2>
+                  <h2 class="h2 fw-light mb-4">{{ menu.aboutme }}</h2>
                   <p>{{ about }}</p>
                 </div>
                 <div class="col-md-5 offset-lg-1">
@@ -85,7 +85,7 @@
           </div>
           <div class="shadow-1-strong bg-white my-5 p-5" id="skills">
             <div class="skills-section">
-              <h2 class="h2 fw-light mb-4">Professional Skills</h2>
+              <h2 class="h2 fw-light mb-4">{{ menu.skill }}</h2>
               <div class="row">
                 <div class="col-md-6" v-for="skill in skills" :key="skill.data">
                   <div class="mb-3" v-for="data in skill.datas" :key="data.name"><span class="fw-bolder">{{
@@ -106,7 +106,7 @@
           </div>
           <div class="shadow-1-strong bg-white my-5 p-5" id="experience">
             <div class="work-experience-section">
-              <h2 class="h2 fw-light mb-4">Experience</h2>
+              <h2 class="h2 fw-light mb-4">{{ menu.experience }}</h2>
               <div class="timeline">
                 <div v-for="(experience, index) in experiences" :key="index" class="timeline-card timeline-card-info"
                      data-aos="fade-in" v-bind:data-aos-delay="(index*200)">
@@ -126,7 +126,7 @@
           </div>
           <div class="shadow-1-strong bg-white my-5 p-5" id="education">
             <div class="education-section">
-              <h2 class="h2 fw-light mb-4">Education</h2>
+              <h2 class="h2 fw-light mb-4">{{ menu.education }}</h2>
               <div class="timeline">
                 <div v-for="(education, index) in educations" :key="index" class="timeline-card timeline-card-success"
                      data-aos="fade-in" v-bind:data-aos-delay="(index*200)">
@@ -151,7 +151,7 @@
           </div>
           <div class="shadow-1-strong bg-white my-5 p-5" id="contact">
             <div class="contant-section">
-              <h2 class="h2 fw-light text mb-4">Contact</h2>
+              <h2 class="h2 fw-light text mb-4">{{ menu.contact }}</h2>
               <div class="row mb-4">
                 <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
                   <div class="mt-1">
@@ -197,7 +197,6 @@
         </div>
         <div class="text-small">
           <div class="mb-1">&copy; Material Resume. All rights reserved.</div>
-          <div>EN - <a href="index_id.html">ID</a></div>
           <!-- This template downdload from https://templateflip.com/templates/material-resume/ -->
         </div>
       </div>
@@ -318,7 +317,17 @@ export default {
           description: 'Elementary School'
         },
       ],
-      formUrl: 'https://formspree.io/f/mnqldlvp'
+      formUrl: 'https://formspree.io/f/mnqldlvp',
+      menu: {
+        about: 'About',
+        skill: 'Professional Skills',
+        experience: 'Experience',
+        education: 'Education',
+        contact: 'Contact',
+        hire: 'Hire Me',
+        download: 'Download',
+        aboutme: 'About Me'
+      }
     }
   }
 }
